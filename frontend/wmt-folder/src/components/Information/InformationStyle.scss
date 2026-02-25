@@ -1,0 +1,106 @@
+@use '/src/style/colors';
+
+body {
+    background: colors.$background-color-main;
+}
+
+/* FileUpload.css */
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 20px 20px 0px;
+  }
+  
+  .file-upload-label {
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  }
+  
+  .file-upload-label:hover {
+    background-color: #2980b9;
+  }
+
+  .file-input {
+    display: none;
+  }
+  
+  .file-info-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 10px;
+  }
+  
+  .file-info {
+    margin: 0;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .remove-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 8px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .remove-button:hover {
+    background-color: #c0392b;
+  }
+
+  .paper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .form {
+    margin-top: 5px;
+    min-width: 80%;
+  }
+
+  .text-field-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  .field {
+    min-width: 600px;
+  }
+
+  .info-icon {
+    margin-left: 5px; 
+    color: gray;
+  }
+
+  .submit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    min-width: 600px;
+  }
+  
+  .file-info-error {
+    color: #d32f2f;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: left;
+    margin: 14px;
+  }
+  

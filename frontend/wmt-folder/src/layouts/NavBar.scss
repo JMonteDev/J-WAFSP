@@ -1,0 +1,9 @@
+@use '/src/style/colors';
+
+.appBar
+{
+    background-color: colors.$background-color-appBar !important;
+    .item:hover{
+        background-color: colors.$hover-color;
+    }
+}

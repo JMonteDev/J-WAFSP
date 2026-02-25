@@ -1,0 +1,66 @@
+@use '/src/style/colors';
+@use '/src/style/margins';
+
+body {
+    margin-top: margins.$header-margin;
+    background: colors.$background-color-main;
+}
+
+.boxContainer{
+    width: 80%;
+    box-shadow: 3;
+    background-color: colors.$background-color-landingPage;
+    margin: auto;
+
+    .stepper{
+        height: 20%;
+        width: 85%; 
+        margin: 0 auto;
+        padding-top: 1rem;
+    }
+
+    .typography{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .activeStepBox{
+        //height: 20rem;
+    }
+
+    .buttonBox{
+        padding-bottom: 1%;
+        height: 20%;
+        display: flex;
+        flex-direction: row;
+        
+        .resetButton{
+            font-size: 1.1rem;
+            margin: auto;
+        }
+
+        .resetButton:hover{
+            background-color: colors.$hover-color;
+        }
+
+        .backButton{
+            font-size: 1.1rem;
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+
+        .backButton:hover{
+            background-color: colors.$hover-color;
+        }
+
+        .nextButton{
+            font-size: 1.1rem;
+            margin-left: 1rem;
+            margin-right: auto;
+        }
+
+        .nextButton:hover{
+            background-color: colors.$hover-color;
+        }
+    }
+}
